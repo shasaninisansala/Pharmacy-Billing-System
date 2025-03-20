@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="inventory" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3fdbec2d-5030-424f-9232-921cb35ec370">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM inventory]]>
+	</queryString>
+	<field name="MID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MID"/>
+		<property name="com.jaspersoft.studio.field.label" value="MID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<field name="M_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="M_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="M_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<field name="Quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<field name="S_Date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="S_Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="S_Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<field name="E_Date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="E_Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="E_Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<field name="A_Qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="A_Qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="A_Qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inventory"/>
+	</field>
+	<group name="MID">
+		<groupExpression><![CDATA[$F{MID}]]></groupExpression>
+	</group>
+	<group name="M_Name">
+		<groupExpression><![CDATA[$F{M_Name}]]></groupExpression>
+	</group>
+	<group name="Quantity">
+		<groupExpression><![CDATA[$F{Quantity}]]></groupExpression>
+	</group>
+	<group name="S_Date">
+		<groupExpression><![CDATA[$F{S_Date}]]></groupExpression>
+	</group>
+	<group name="E_Date">
+		<groupExpression><![CDATA[$F{E_Date}]]></groupExpression>
+	</group>
+	<group name="A_Qty">
+		<groupExpression><![CDATA[$F{A_Qty}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="0" width="295" height="30" uuid="c5869b07-cdf0-46a8-aa8b-01680365b5a6"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pharmacy Management System]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="30" width="153" height="30" uuid="5662a59f-52a9-494a-b5a7-fd3ffc22c278"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inventory Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="100" height="30" uuid="4611e44f-68ca-4743-aa18-0cd93fc3a6ff"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Med ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="100" height="30" uuid="15f351dd-5634-454b-846d-58b166fa2d9f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Med Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="6e0ec4cf-e179-43b2-ae54-5b5acba67e78"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="100" height="30" uuid="1223e3e5-7177-4a04-9fb0-6d8748660888"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="30" uuid="1202bfa1-2bdd-4f1e-817c-82f9401f1c81"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Expire Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="95" height="30" uuid="36a84ce7-9cc9-40b8-9854-f40106a1cb43"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Available QTY]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="28" width="595" height="1" uuid="dd36d17f-3a7c-4c39-bfc8-8eecdde77043"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="-15" y="10" width="90" height="30" uuid="c6aeb48b-fd2c-4c1e-be42-021aba4fbf67"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="10" width="90" height="30" uuid="a8e84281-6554-4f8a-91a8-f645b5daa933"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{M_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="10" width="90" height="30" uuid="16bcf30b-f75b-45c8-81c2-d7fa2f404fb0"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="10" width="90" height="30" uuid="1a4db218-5fa2-450c-b8b0-e9e4111a99e2"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="10" width="90" height="30" uuid="8c232a9f-4cb3-4c7f-a106-e8240353427e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{E_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="9" width="90" height="30" uuid="e8e63237-6eee-46c9-b99d-e12745c92d78"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{A_Qty}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="39" width="608" height="2" uuid="370377c3-af28-4f57-8c1b-78b6c4a1cfec"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

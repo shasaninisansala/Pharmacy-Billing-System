@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="preReport" pageWidth="900" pageHeight="595" orientation="Landscape" columnWidth="860" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="078b0121-d11d-419c-ae30-39a50725ce01">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL10"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM prescription]]>
+	</queryString>
+	<field name="Pre" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Pre"/>
+		<property name="com.jaspersoft.studio.field.label" value="Pre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="PID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="P_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="P_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="P_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="MID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MID"/>
+		<property name="com.jaspersoft.studio.field.label" value="MID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="M_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="M_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="M_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="Doc_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Doc_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Doc_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="Dosage" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Dosage"/>
+		<property name="com.jaspersoft.studio.field.label" value="Dosage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="Qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="Qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<field name="Pre_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Pre_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Pre_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prescription"/>
+	</field>
+	<group name="Pre">
+		<groupExpression><![CDATA[$F{Pre}]]></groupExpression>
+	</group>
+	<group name="PID">
+		<groupExpression><![CDATA[$F{PID}]]></groupExpression>
+	</group>
+	<group name="P_Name">
+		<groupExpression><![CDATA[$F{P_Name}]]></groupExpression>
+	</group>
+	<group name="MID">
+		<groupExpression><![CDATA[$F{MID}]]></groupExpression>
+	</group>
+	<group name="M_Name">
+		<groupExpression><![CDATA[$F{M_Name}]]></groupExpression>
+	</group>
+	<group name="Doc_Name">
+		<groupExpression><![CDATA[$F{Doc_Name}]]></groupExpression>
+	</group>
+	<group name="Dosage">
+		<groupExpression><![CDATA[$F{Dosage}]]></groupExpression>
+	</group>
+	<group name="Qty">
+		<groupExpression><![CDATA[$F{Qty}]]></groupExpression>
+	</group>
+	<group name="Pre_date">
+		<groupExpression><![CDATA[$F{Pre_date}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="10" width="300" height="30" uuid="56e7c9b5-7fee-4f19-b4ff-c5f30cd80bac"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pharmacy Management System]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="40" width="190" height="30" uuid="3da4e3d1-bba5-419a-a097-5ed0cc475079"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescription Detail Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="100" height="30" uuid="f2a83fe7-02a0-44e4-b35a-5b27b0faba7e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Releasing ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="10" width="100" height="30" uuid="d3a27f51-0f86-4cb6-9574-f894f73883b4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="10" width="100" height="30" uuid="8a94f49d-c44a-41af-807f-c4941d4e3c0e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="10" width="100" height="30" uuid="d7ab9da4-9792-4993-a11b-adce7babcc06"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Med ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="10" width="100" height="30" uuid="a4804894-988a-4ed4-99cd-deae6832a1d7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Med Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="10" width="100" height="30" uuid="b2a0d739-9b32-4848-b555-77401a2e11fe"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doc Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="10" width="100" height="30" uuid="d5564b2d-2e48-49bc-bde9-c96439fdb9a2"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dosage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="10" width="100" height="30" uuid="41b5bae1-1452-4d64-aa1c-5b73fd322e83"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescribed Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="780" y="10" width="90" height="30" uuid="ff531fcf-39e3-49ad-982e-82ba6c08bc5c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescribed Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="40" width="900" height="2" uuid="00f49da1-1b0f-4557-820f-afeee7adf829"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="10" width="100" height="30" uuid="7e417d5f-1bc8-4ffd-aec8-9e07f89e8b91"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Pre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="10" width="100" height="30" uuid="3a17b9aa-ad93-447d-b883-6a273e63759c"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="10" width="100" height="30" uuid="72e3705c-7323-4cf4-bc77-25b7b12020a7"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="10" width="100" height="30" uuid="53587bed-d16a-4d8d-a00a-c6867b84432d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="10" width="100" height="30" uuid="e8adb8f5-a116-4534-81cb-255195913a2e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{M_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="10" width="100" height="30" uuid="84af40ef-6419-49f9-a50a-74b4d9e15a97"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Doc_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="580" y="10" width="100" height="30" uuid="13916526-18f9-4672-8993-9a9a55f829af"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Dosage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="10" width="100" height="30" uuid="637f4f14-bc00-44b0-85da-fa93185a3bfa"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="782" y="10" width="100" height="30" uuid="77b6fcd1-6c3c-42f1-b1a3-70c3805e58e9"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Pre_date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="38" width="900" height="2" uuid="0d63e176-c0bd-4f39-92b2-b96be2d4167f"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
